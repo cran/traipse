@@ -1,6 +1,6 @@
 Package: traipse
 Title: Shared Tools for Tracking Data
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     c(
     person(given = "Michael", 
@@ -18,16 +18,16 @@ Description: A collection of commonly used tools for animal movement and other t
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Depends: R (>= 2.10)
-Imports: magrittr, geodist, geosphere
+Imports: magrittr, geodist, geosphere, stats
 URL: https://github.com/Trackage/traipse
 BugReports: https://github.com/Trackage/traipse/issues
-Suggests: covr, testthat (>= 2.1.0), dplyr, tibble, spelling
+Suggests: covr, testthat (>= 2.1.0), dplyr, tibble, tidyr, spelling
 Language: en-US
 NeedsCompilation: no
-Packaged: 2019-06-28 22:30:15 UTC; mdsumner
+Packaged: 2020-10-23 11:28:41 UTC; mdsumner
 Author: Michael Sumner [aut, cre] (<https://orcid.org/0000-0002-2471-7511>)
 Maintainer: Michael Sumner <mdsumner@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-07-02 12:10:02 UTC
+Date/Publication: 2020-10-25 05:50:03 UTC

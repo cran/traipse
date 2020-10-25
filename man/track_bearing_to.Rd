@@ -19,9 +19,10 @@ track_bearing_to(x, y, to_x, to_y)
 a numeric vector of absolute bearing-to in degrees, see Details
 }
 \description{
-Calculate geodesic bearing to a location or locations based on longitude, latitude (from)
-input vectors and longitude, latitude (to) input vectors. The \emph{to} values may be a
-single value or individual to each \emph{from} location.
+Calculate geodesic bearing to a location or locations based on longitude,
+latitude (from) input vectors and longitude, latitude (to) input vectors. The
+unit of bearing is degrees. The \emph{to} values may be a single value or
+individual to each \emph{from} location.
 }
 \details{
 No missing values are required as padding, but input data with \code{NA}s will incur an
@@ -31,7 +32,7 @@ To use this on multiple track ids, use a grouped data frame with tidyverse code 
 \code{data \%>\% group_by(id) \%>\% mutate(bearing_to = track_bearing_to(lon, lat, to_lon, to_lat))}.
 
 Absolute bearing is relative to North (0), and proceeds clockwise positive and anti-clockwise
-negative \code{N = 0, E = 90, S = +/-180, W = -90}.
+negative \verb{N = 0, E = 90, S = +/-180, W = -90}.
 
 There is no \code{NA} padding in the output value (though missing values in the input will be mirrored
 in the output).

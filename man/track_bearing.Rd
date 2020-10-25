@@ -15,7 +15,7 @@ track_bearing(x, y)
 a numeric vector of absolute bearing in degrees, see Details
 }
 \description{
-Calculate sequential bearing on longitude, latitude input vectors.
+Calculate sequential bearing on longitude, latitude input vectors. The unit of bearing is degrees.
 }
 \details{
 By convention the last value is set to \code{NA} missing value, because the bearing
@@ -25,7 +25,7 @@ To use this on multiple track ids, use a grouped data frame with tidyverse code 
 \code{data \%>\% group_by(id) \%>\% mutate(turn = track_bearing(lon, lat))}.
 
 Absolute bearing is relative to North (0), and proceeds clockwise positive and anti-clockwise
-negative \code{N = 0, E = 90, S = +/-180, W = -90}.
+negative \verb{N = 0, E = 90, S = +/-180, W = -90}.
 
 The last value will be \code{NA} as the bearing is relative to the first point of each segment.
 }
