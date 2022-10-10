@@ -1,3 +1,9 @@
+# traipse 0.3.0
+
+* New function 'track_grid()' to compute cell index for points for a grid. 
+
+* Fixed test failing as newer R allows raw numeric input to date-time. 
+
 # traipse 0.2.5
 
 * Patch fix for new {geosphere} >= 1.5.14, thanks to CRAN notification pretest reverse
